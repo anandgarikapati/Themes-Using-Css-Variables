@@ -2,10 +2,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #b0bec5;
-    
+    background-color: #b0bec5;   
 }
-
 :root {
     --font-size: 17px;
     --header-size: 1.5rem;
@@ -14,7 +12,6 @@ body {
     --border-radius: 8px;
     --font-color:white
 }
-
 header,footer {
     color: var(--font-color);
     background-color: var(--background-color);
@@ -22,27 +19,19 @@ header,footer {
     padding: 15px;
     font-size: var(--header-size);
 }
-
 .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    
-    
+    grid-template-columns: 1fr 1fr 1fr;   
 }
 #programiz {
     height: auto;
     width: 100%;
 }
-
 section {
-    
     margin: 6px;
     background-color: var(--background-color);
     box-shadow: var( --box-shadow);
     padding: 2px;
-    
-    
 }
 section:hover {
     transform: translateY(-2.5px);
@@ -50,11 +39,8 @@ section:hover {
 p,h3 {
     font-size: var(--font-size);
     text-align: center;
-    color: var(--font-color);
-    
-    
+    color: var(--font-color);   
 }
-
 article{
     font-size: var(--font-size);
     margin: 40px;
@@ -62,13 +48,11 @@ article{
     border-radius: var(--border-radius);
     background-color: var(--background-color);
     box-shadow: var( --box-shadow);
-    padding: 5px;
-    
+    padding: 5px;   
 }
 article:hover {
     transform: translateY(-2.5px);
 }
-
 footer > button{
     margin: 5px;
     padding: 12px;
@@ -76,13 +60,10 @@ footer > button{
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
-
 button {
     transition: transition-delay;
 }
 button:hover {
-    
-    
      top: 10px;
      cursor: pointer;
      color: white;
@@ -90,5 +71,16 @@ button:hover {
      background-color: black;
      transition-delay: 5s;
      transform: translateY(-2.5px);
+}
+@media only screen and (max-width: 480px) {
+    .main {
+    
+        display: flex;
+        flex-wrap: wrap;
+    
+        
+
+    }
+    
 }
 
