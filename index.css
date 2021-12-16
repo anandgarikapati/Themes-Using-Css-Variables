@@ -8,7 +8,7 @@ body {
     --font-size: 17px;
     --header-size: 1.5rem;
     --background-color: #546e7a;
-    --box-shadow: 7px 7px 5px #212121;
+    --box-shadow: -5px 5px  5px 1px #e0e0df, -5px 5px 5px 5px black;
     --border-radius: 8px;
     --font-color:white
 }
@@ -44,7 +44,6 @@ p,h3 {
 article{
     font-size: var(--font-size);
     margin: 40px;
-    /* height: 140px; */
     border-radius: var(--border-radius);
     background-color: var(--background-color);
     box-shadow: var( --box-shadow);
@@ -74,13 +73,11 @@ button:hover {
 }
 @media only screen and (max-width: 480px) {
     .main {
-    
         display: flex;
-        flex-wrap: wrap;
-    
-        
-
+        flex-wrap: wrap;    
     }
-    
+    section {
+        margin: 8px;
+    }
 }
 
