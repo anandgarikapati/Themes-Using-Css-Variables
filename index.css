@@ -2,21 +2,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #b0bec5;   
+    background-color: black;   
 }
 :root {
     --font-size: 17px;
     --header-size: 1.5rem;
-    --background-color: #546e7a;
-    --box-shadow: -5px 5px  5px 1px #e0e0df, -5px 5px 5px 5px black;
-    --border-radius: 8px;
+    --background-color: #08b489;
+    --box-shadow: -2px 5px  5px 1px #e0e0df, -5px 5px 5px 5px black;
+    --border-radius: 7px;
     --font-color:white
 }
 header,footer {
     color: var(--font-color);
-    background-color: var(--background-color);
+    background-color: #eb4924 ;
     text-align: center;
-    padding: 15px;
+    padding: 12px;
     font-size: var(--header-size);
 }
 .main {
@@ -53,23 +53,20 @@ article:hover {
     transform: translateY(-2.5px);
 }
 footer > button{
-    margin: 5px;
+    background-color: #f1c933;
+    margin: 15px;
     padding: 12px;
     font-weight: bold;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
 }
-button {
-    transition: transition-delay;
-}
+
 button:hover {
      top: 10px;
      cursor: pointer;
      color: white;
-     transition: transition-delay;
-     background-color: black;
-     transition-delay: 5s;
-     transform: translateY(-2.5px);
+     opacity: 0.8;
+     transform: translateY(-2.0px);
 }
 @media only screen and (max-width: 480px) {
     .main {
